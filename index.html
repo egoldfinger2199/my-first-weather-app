@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/09165e54a3.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Quicksand:wght@300;400&family=Tenali+Ramakrishna&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="search-bar" id="search-form">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search a city" aria-label="Search"
+                    id="city-input" />
+                <button class="btn my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn my-2 my-sm-0" id="current-location-button">
+                    <div class="current"> Current Location</div>
+                </button>
+            </form>
+            <hr />
+
+            <div class="row current-weather-description">
+                <div class="col-3">
+                    <div class="top-titles">
+                        <span id="description"><strong></strong></span>
+                    </div>
+                    <div class="current-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="humidity-precip">
+                                <strong>Humidity</strong>
+                                <div>
+                                    <span id="humidity"></span>%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="humidity-precip">
+                                <strong>Wind</strong>
+                                <div>
+                                    <span id="wind"></span> mi/h
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="top-titles">
+                        <strong>Currently</strong>
+                    </div>
+                    <div class="current-temperature-and-units">
+                        <span class="current-temperature" id="temperature"> 56 </span>
+                        <span class="units">
+                            °F </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="low-high">
+                                <strong>Low</strong>
+                                <div>
+                                    <span id="temp-min"></span>°
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="low-high">
+                                <strong>High</strong>
+                                <div>
+                                    <span id="temp-max"></span>°
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="current-city" id="city">
+                        <strong></strong>
+                    </div>
+                    <div class="date-and-time" id="date">
+                        <br />
+                        
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <hr />
+            <br />
+            <div class="row week-day">
+                <div class="col">
+                    <div class="day-of-the-week">
+                        <strong>Monday</strong>
+                    </div>
+                    <div class="weather-prediction-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="temperature-prediction">
+                        55°/75°
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day-of-the-week">
+                        <strong>Tuesday</strong>
+                    </div>
+                    <div class="weather-prediction-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="temperature-prediction">
+                        56°/73°
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day-of-the-week">
+                        <strong>Wednesday</strong>
+                    </div>
+                    <div class="weather-prediction-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="temperature-prediction">
+                        59°/65°
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day-of-the-week">
+                        <strong>Thursday</strong>
+                    </div>
+                    <div class="weather-prediction-icon">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <div class="temperature-prediction">
+                        58°/72°
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="day-of-the-week">
+                        <strong<>Friday</strong>
+                    </div>
+                    <div class="weather-prediction-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="temperature-prediction">
+                        57°/75°
+                    </div>
+                </div>
+            </div>
+            <script src="src/script.js"></script>
+</body>
+
+</html>
