@@ -78,6 +78,7 @@
 .current-weather-description {
   font-family: "Quicksand", sans-serif;
   color: #e1e9ef;
+  text-transform: capitalize;
 }
 
 .weather-prediction-icon {
@@ -104,7 +105,7 @@
 }
 
 .date-and-time {
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   margin-bottom: 30px;
 }
