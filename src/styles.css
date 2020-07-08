@@ -37,6 +37,7 @@
 
 .current {
   color: #e1e9ef;
+  font-family: "Quicksand", sans-serif;
 }
 .top-titles {
   font-family: "Quicksand", sans-serif;
@@ -58,19 +59,20 @@
 }
 
 .current-temperature {
-  font-size: 80px;
+  font-size: 84px;
   text-align: center;
   position: relative;
-  top: -5px;
+  top: -8px;
+  left: -6px;
   padding: 0;
   margin: 0;
 }
 
 .units {
-  font-size: 20px;
-  position: absolute;
-  top: 15px;
-  right: 0;
+  font-size: 14px;
+  position: relative;
+  top: -110px;
+  left: 86px;
 }
 
 .current-weather-description {
@@ -93,7 +95,7 @@
   font-size: 15px;
   text-align: center;
   position: relative;
-  top: -12px;
+  top: -42px;
 }
 
 .current-city {
