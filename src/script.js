@@ -31,6 +31,7 @@ function displayWeatherCondition(response) {
   let windElement = document.querySelector("#wind");
   let minimumTemperatureElement = document.querySelector("#temp-min");
   let maximumTemperatureElement = document.querySelector("#temp-max");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;

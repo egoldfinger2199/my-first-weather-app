@@ -71,8 +71,7 @@
 .units {
   font-size: 14px;
   position: relative;
-  top: -110px;
-  left: 86px;
+  top: -60px;
 }
 
 .current-weather-description {
@@ -96,7 +95,7 @@
   font-size: 15px;
   text-align: center;
   position: relative;
-  top: -42px;
+  top: -18px;
 }
 
 .current-city {
