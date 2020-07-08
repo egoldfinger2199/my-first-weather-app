@@ -1,21 +1,10 @@
 .container {
   border-radius: 15px;
-  background-image: linear-gradient(
-    to top,
-    #505285 0%,
-    #585e92 12%,
-    #65689f 25%,
-    #7474b0 37%,
-    #7e7ebb 50%,
-    #8389c7 62%,
-    #9795d4 75%,
-    #a2a1dc 87%,
-    #b5aee4 100%
-  );
   padding: 15px;
   margin: 20px;
   max-width: 600px;
   margin: auto;
+  background-color: #e1e0db;
 }
 
 .search-control {
@@ -24,37 +13,46 @@
   padding: 10px;
   font-size: 20px;
   line-height: 1.5;
-  color: #5b6195;
+  color: #869756;
   background-color: #e1e9ef;
-  border: 1px solid #ced4da;
+  border: 1px solid #869756;
   border-radius: 30px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.form-inline {
+  font-family: "Noto Serif JP", serif;
+}
+
 .fa-search {
-  color: #e1e9ef;
+  color: #ffffff;
+  font-family: "Noto Serif JP", serif;
 }
 
 .current {
-  color: #e1e9ef;
-  font-family: "Quicksand", sans-serif;
+  color: #dca59b;
+  font-family: "Noto Serif JP", serif;
 }
+
 .top-titles {
-  font-family: "Quicksand", sans-serif;
-  color: #e1e9ef;
+  font-family: "Noto Serif JP", serif;
+  color: #7ac0c9;
   font-size: 18px;
   text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .current-icon {
   font-size: 66px;
   padding: 5px;
   text-align: center;
+  color: #ffffff;
 }
 
 .current-temperature-and-units {
   text-align: center;
-  color: #e1e9ef;
+  color: #869756;
   position: relative;
 }
 
@@ -63,32 +61,39 @@
   text-align: center;
   position: relative;
   top: -8px;
-  left: -6px;
+  left: 5px;
   padding: 0;
   margin: 0;
+  color: #dca59b;
 }
 
 .units {
   font-size: 14px;
   position: relative;
-  top: -60px;
+  left: 5px;
+  top: -58px;
+  color: #dca59b;
 }
 
 .current-weather-description {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Serif JP", serif;
   color: #e1e9ef;
+}
+
+.current-description {
   text-transform: capitalize;
 }
 
 .weather-prediction-icon {
   font-size: 48px;
-  color: #e1e9ef;
+  color: #ffffff;
   text-align: center;
 }
 
 .humidity-precip {
   font-size: 15px;
   text-align: center;
+  color: #869756;
 }
 
 .low-high {
@@ -96,36 +101,44 @@
   text-align: center;
   position: relative;
   top: -18px;
+  color: #869756;
 }
 
 .current-city {
-  font-size: 18px;
+  font-size: 40px;
   margin-bottom: 15px;
+  color: #7ac0c9;
+  margin-bottom: 0;
+  position: relative;
+  top: -10px;
 }
 
 .date-and-time {
   font-size: 16px;
   text-align: left;
   margin-bottom: 30px;
+  color: #2b3157;
+  position: relative;
+  top: -10px;
 }
 
 .day-of-the-week {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 500;
-  color: #e1e9ef;
+  color: #7ac0c9;
   text-align: center;
 }
 
 .temperature-prediction {
-  font-family: "Quicksand", sans-serif;
-  color: #e1e9ef;
+  font-family: "Noto Serif JP", serif;
+  color: #869756;
   text-align: center;
   margin-bottom: 30px;
 }
 
 footer {
-  font-family: "Quicksand", sans-serif;
-  color: #e1e9ef;
+  font-family: "Noto Serif JP", serif;
+  color: #dca59b;
   font-size: 18px;
   text-align: center;
 }
