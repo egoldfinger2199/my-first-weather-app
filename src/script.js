@@ -40,11 +40,38 @@ function displayWeatherCondition(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   minimumTemperatureElement.innerHTML = Math.round(response.data.main.temp_min);
   maximumTemperatureElement.innerHTML = Math.round(response.data.main.temp_max);
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
+  iconElement.innerHTML = response.data.weather[0].icon;
+  if (response.data.weather[0].icon === "01d") {
+    iconElement.innerHTML = `<i class="fas fa-sun"></i>`;
+  } else if (response.data.weather[0].icon === "02d") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-sun"></i>`;
+  } else if (response.data.weather[0].icon === "03d") {
+    iconElement.innerHTML = `<i class="fas fa-cloud"></i>`;
+  } else if (response.data.weather[0].icon === "04d") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-sun"></i>`;
+  } else if (response.data.weather[0].icon === "09d") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-sun-rain"></i>`;
+  } else if (response.data.weather[0].icon === "10d") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-showers-heavy"></i>`;
+  } else if (response.data.weather[0].icon === "11d" || "10n") {
+    iconElement.innerHTML = `<i class="fas fa-poo-storm"></i>`;
+  } else if (response.data.weather[0].icon === "13d" || "13n") {
+    iconElement.innerHTML = `<i class="fas fa-snowflake"></i>`;
+  } else if (response.data.weather[0].icon === "50d" || "50n") {
+    iconElement.innerHTML = `<i class="fas fa-smog"></i>`;
+  } else if (response.data.weather[0].icon === "01n") {
+    iconElement.innerHTML = `<i class="fas fa-moon"></i>`;
+  } else if (response.data.weather[0].icon === "02n") {
+    iconElement.innerHTML = '<i class="fas fa-cloud-moon"></i>';
+  } else if (response.data.weather[0].icon === "03n") {
+    iconElement.innerHTML = `<i class="fas fa-cloud"></i>`;
+  } else if (response.data.weather[0].icon === "04n") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-moon"></i>`;
+  } else if (response.data.weather[0].icon === "09n") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-moon-rain"></i>`;
+  } else if (response.data.weather[0].icon === "10n") {
+    iconElement.innerHTML = `<i class="fas fa-cloud-moon-rain"></i>`;
+  }
 }
 
 function searchCity(city) {
