@@ -141,3 +141,12 @@ footer {
   font-size: 18px;
   text-align: center;
 }
+
+.current-temperature-and-units .active {
+  color: #dca59b;
+  cursor: default;
+}
+
+.current-temperature-and-units .active:hover {
+  text-decoration: none;
+}
