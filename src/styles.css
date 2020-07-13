@@ -83,7 +83,7 @@
   text-transform: capitalize;
 }
 
-.weather-prediction-icon {
+.weather-forecast-icon {
   font-size: 48px;
   color: #ffffff;
   text-align: center;
@@ -116,7 +116,7 @@
   font-size: 16px;
   text-align: left;
   margin-bottom: 30px;
-  color: #2b3157;
+  color: white;
   position: relative;
   top: -10px;
 }
@@ -128,7 +128,7 @@
   text-align: center;
 }
 
-.temperature-prediction {
+.temperature-forecast {
   font-family: "Noto Serif JP", serif;
   color: #869756;
   text-align: center;
