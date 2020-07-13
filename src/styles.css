@@ -74,6 +74,14 @@
   color: #dca59b;
 }
 
+.inactive-unit {
+  color: white;
+}
+
+.inactive-unit:hover {
+  color: #dca59b;
+}
+
 .current-weather-description {
   font-family: "Noto Serif JP", serif;
   color: #e1e9ef;
@@ -81,12 +89,6 @@
 
 .current-description {
   text-transform: capitalize;
-}
-
-.weather-forecast-icon {
-  font-size: 48px;
-  color: #ffffff;
-  text-align: center;
 }
 
 .humidity-precip {
@@ -140,6 +142,18 @@ footer {
   color: #dca59b;
   font-size: 18px;
   text-align: center;
+}
+
+.link {
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  color: #dca59b;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: white;
 }
 
 .current-temperature-and-units .active {
