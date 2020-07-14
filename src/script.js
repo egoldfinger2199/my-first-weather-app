@@ -98,7 +98,7 @@ function displayForecast(response) {
              ${formatHours(forecast.dt * 1000)}
           </strong>
       </div>
-      <div
+      <div>
         ${getIcon(forecast.weather[0].icon)}
       </div>
       <div class="temperature-forecast">
@@ -113,35 +113,35 @@ function displayForecast(response) {
     function getIcon(icon) {
       let iconHTML = "";
       if (icon === "01d") {
-        iconHTML = `<i class="fas fa-sun"></i>`;
+        iconHTML = `<i class="fas fa-sun weather-forecast-icon"></i>`;
       } else if (icon === "02d") {
-        iconHTML = `<i class="fas fa-cloud-sun"></i>`;
+        iconHTML = `<i class="fas fa-cloud-sun weather-forecast-icon"></i>`;
       } else if (icon === "03d") {
-        iconHTML = `<i class="fas fa-cloud-sun"></i>`;
+        iconHTML = `<i class="fas fa-cloud-sun weather-forecast-icon"></i>`;
       } else if (icon === "04d") {
-        iconHTML = `<i class="fas fa-cloud-sun"></i>`;
+        iconHTML = `<i class="fas fa-cloud-sun weather-forecast-icon"></i>`;
       } else if (icon === "09d") {
-        iconHTML = `<i class="fas fa-cloud-sun-rain"></i>`;
+        iconHTML = `<i class="fas fa-cloud-sun-rain weather-forecast-icon"></i>`;
       } else if (icon === "10d") {
-        iconHTML = `<i class="fas fa-cloud-showers-heavy"></i>`;
+        iconHTML = `<i class="fas fa-cloud-showers-heavy weather-forecast-icon"></i>`;
       } else if (icon === "11d" || "10n") {
-        iconHTML = `<i class="fas fa-poo-storm"></i>`;
+        iconHTML = `<i class="fas fa-poo-storm weather-forecast-icon"></i>`;
       } else if (icon === "13d" || "13n") {
-        iconHTML = `<i class="fas fa-snowflake"></i>`;
+        iconHTML = `<i class="fas fa-snowflake weather-forecast-icon"></i>`;
       } else if (icon === "50d" || "50n") {
-        iconHTML = `<i class="fas fa-smog"></i>`;
+        iconHTML = `<i class="fas fa-smog weather-forecast-icon v"></i>`;
       } else if (icon === "01n") {
-        iconHTML = `<i class="fas fa-moon"></i>`;
+        iconHTML = `<i class="fas fa-moon weather-forecast-icon"></i>`;
       } else if (icon === "02n") {
-        iconHTML = '<i class="fas fa-cloud-moon"></i>';
+        iconHTML = '<i class="fas fa-cloud-moon weather-forecast-icon"></i>';
       } else if (icon === "03n") {
-        iconHTML = `<i class="fas fa-cloud"></i>`;
+        iconHTML = `<i class="fas fa-cloud weather-forecast-icon"></i>`;
       } else if (icon === "04n") {
-        iconHTML = `<i class="fas fa-cloud-moon"></i>`;
+        iconHTML = `<i class="fas fa-cloud-moon weather-forecast-icon"></i>`;
       } else if (icon === "09n") {
-        iconHTML = `<i class="fas fa-cloud-moon-rain"></i>`;
+        iconHTML = `<i class="fas fa-cloud-moon-rain weather-forecast-icon"></i>`;
       } else if (icon === "10n") {
-        iconHTML = `<i class="fas fa-cloud-moon-rain"></i>`;
+        iconHTML = `<i class="fas fa-cloud-moon-rain weather-forecast-icon"></i>`;
       } else {
         iconHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png" />`;
       }

@@ -2,7 +2,7 @@
   border-radius: 10px;
   padding: 15px;
   margin: auto;
-  background-color: #e1e0db;
+  background-color: #abb7ba;
   border-color: #2b3157;
   border-width: 2px;
 }
@@ -10,7 +10,6 @@
 .search-control {
   margin: 0 auto;
   padding: 10px;
-  color: #869756;
   border-radius: 10px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -24,7 +23,7 @@
 }
 
 .current {
-  color: #dca59b;
+  color: #f9e492;
   font-family: "Noto Serif JP", serif;
 }
 
@@ -35,7 +34,7 @@
 
 .top-titles {
   font-family: "Noto Serif JP", serif;
-  color: #7ac0c9;
+  color: #d0dfc0;
   font-size: 18px;
   text-align: center;
   font-weight: 400;
@@ -63,7 +62,7 @@
   left: 5px;
   padding: 0;
   margin: 0;
-  color: #dca59b;
+  color: #f9e492;
 }
 
 .units {
@@ -71,7 +70,11 @@
   position: relative;
   left: 5px;
   top: -58px;
-  color: #dca59b;
+  color: #f9e492;
+}
+
+.active {
+  color: #f9e492;
 }
 
 .inactive-unit {
@@ -79,7 +82,7 @@
 }
 
 .inactive-unit:hover {
-  color: #dca59b;
+  color: #f9e492;
 }
 
 .current-weather-description {
@@ -94,7 +97,7 @@
 .humidity-precip {
   font-size: 15px;
   text-align: center;
-  color: #869756;
+  color: #586043;
 }
 
 .low-high {
@@ -102,13 +105,13 @@
   text-align: center;
   position: relative;
   top: -18px;
-  color: #869756;
+  color: #586043;
 }
 
 .current-city {
   font-size: 40px;
   margin-bottom: 15px;
-  color: #7ac0c9;
+  color: #d0dfc0;
   margin-bottom: 0;
   position: relative;
   top: -10px;
@@ -123,39 +126,53 @@
   top: -10px;
 }
 
+.three-hour-forecast {
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  color: #586043;
+  font-size: 18px;
+}
+
+.col-2 {
+  text-align: center;
+}
+
 .day-of-the-week {
   font-family: "Noto Serif JP", serif;
   font-weight: 500;
-  color: #7ac0c9;
+  color: #d0dfc0;
   text-align: center;
 }
 
 .temperature-forecast {
   font-family: "Noto Serif JP", serif;
-  color: #869756;
+  color: #586043;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .weather-forecast-icon {
-  font-size: 66px;
-  padding: 5px;
+  font-size: 40px;
+  padding: 12px;
   text-align: center;
   color: #ffffff;
 }
 
 footer {
   font-family: "Noto Serif JP", serif;
-  color: #dca59b;
+  color: #f9e492;
+  font-size: 18px;
+  text-align: center;
+}
+
+.a:link {
+  font-family: "Noto Serif JP", serif;
   font-size: 18px;
   text-align: center;
 }
 
 .link {
-  font-family: "Noto Serif JP", serif;
-  font-size: 18px;
-  color: #dca59b;
-  text-align: center;
+  color: #f9e492;
   text-decoration: underline;
 }
 
@@ -164,10 +181,11 @@ footer {
 }
 
 .current-temperature-and-units .active {
-  color: #dca59b;
+  color: #f9e492;
   cursor: default;
 }
 
 .current-temperature-and-units .active:hover {
   text-decoration: none;
+  color: #f9e492;
 }
